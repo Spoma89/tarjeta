@@ -9,11 +9,17 @@ body{
 div.Portada{
  	width: 100%;
  	height: 500px;
- 	background-color: #ffffff;
- 	position: fixed no-repeat;
+ 	background-image: url(imagenes/500.png);
+ 	position:cover no-repeat;
  	margin-bottom: 7em;
 
  }
+ @media only screen and (min-width: 498px) {
+  div.Portada {
+    background-image: url(imagenes/1500.png);
+    position: fixed no-repeat;
+  }
+}
  h1.primero {margin-top: 0px;
  	padding-top: 120px;
  	font-size: 8em;
@@ -30,7 +36,11 @@ div.Portada{
  }
 
 p{
-	font-size: 15px;
+	font-size: 22px;
+	padding: 15px ;
+	margin-left: 15px;
+	margin-top: : 0px;
+	text-align: left;
 }
 footer {
   text-align: center;
@@ -46,4 +56,10 @@ div.col{
 iframe{
 	border-radius: 20px;
 	width: 100%;
+}
+
+h3{
+	font-size: 4em;
+font-family: 'Lobster', cursive;
+margin-bottom: 0px;
 }
